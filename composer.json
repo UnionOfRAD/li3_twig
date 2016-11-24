@@ -3,7 +3,8 @@
       "type" : "lithium-library",
       "description" : "Lithium Twig integration",
       "license" : "MIT",
+      "minimum-stability": "stable",
       "require": {
-            "twig/twig": "1.13.1"
+            "twig/twig": "v1.28.*"
       }
 }
