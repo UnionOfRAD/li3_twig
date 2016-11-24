@@ -8,8 +8,8 @@
 
 namespace li3_twig\template;
 
-use lithium\util\String;
 use lithium\core\Libraries;
+use lithium\util\Text;
 
 /**
  * View adapter for Twig templating. http://twig-project.org
@@ -34,7 +34,7 @@ class Loader extends \lithium\core\Object {
 		$params['library'] = $library['path'];
 
 		return array_map(function ($item) use ($params) {
-			return String::insert($item, $params);
+			return Text::insert($item, $params);
 		}, (array) $this->_config['paths'][$type]);
 	}
 }

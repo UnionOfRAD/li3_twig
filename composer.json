@@ -3,7 +3,11 @@
       "type" : "lithium-library",
       "description" : "Lithium Twig integration",
       "license" : "MIT",
+      "minimum-stability": "dev",
       "require": {
-            "twig/twig": "1.13.1"
+            "twig/twig": "v1.28.*"
+      },
+      "require-dev": {
+            "unionofrad/lithium": "v1.1.*"
       }
 }
